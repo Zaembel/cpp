@@ -1,1 +1,25 @@
+#include <iostream>
 
+int main()
+{
+    int chislo;
+    using namespace std;
+    setlocale(LC_ALL, "");
+    cout << "Введите шестизначное число\n";
+    cin >> chislo;
+    if (chislo / 100000 == 0 || chislo / 1000000 > 0) {
+        cout << "Введенные данные не корректны";
+    }
+    else if ((chislo / 100000) + (chislo / 10000) % 10 + (chislo / 1000) % 10 == (chislo / 100) % 10 + (chislo / 10) % 10 + (chislo) % 10) {
+    cout << "Заданное число счастливое";
+    }
+    else {
+        cout << "Заданное число несчастливое";
+    }
+
+
+
+
+
+
+}
